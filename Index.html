@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shopix</title>
+<style>
+  body { font-family: 'Arial', sans-serif; background:#f7f7f7; margin:0; padding:0; }
+  .container { max-width:480px; margin:20px auto; background:white; padding:20px; border-radius:12px; box-shadow:0 0 10px rgba(0,0,0,0.1); }
+  .header { text-align:center; margin-bottom:20px; }
+  .header img { max-width:200px; border-radius:12px; margin-bottom:10px; }
+  .header h1 { font-size:32px; color:#28a745; margin:0; font-weight:bold; letter-spacing:2px; }
+  .product-img { width:100%; border-radius:12px; margin-bottom:10px; }
+  h2 { font-size:22px; margin-bottom:10px; text-align:center; }
+  p { line-height:1.6; }
+  input, select, textarea { width:100%; padding:10px; margin:8px 0; border-radius:8px; border:1px solid #ccc; font-size:16px; }
+  button { width:100%; padding:12px; background:#28a745; color:white; font-size:18px; border:none; border-radius:8px; cursor:pointer; }
+  button:hover { background:#218838; }
+  .phone-number { margin-top:15px; font-weight:bold; text-align:center; color:#333; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- الهيدر: الصورة + اسم الصفحة -->
+  <div class="header">
+    <img src="shopix.jpg" alt="Shopix">
+    <h1>Shopix</h1>
+  </div>
+
+  <h2>مكتب + كرسي للأطفال لمختلف النشاطات</h2>
+  <p><strong>السعر: 2800 دج</strong></p>
+  <p>اختر المنتج المطلوب من الصور التالية ثم املأ بياناتك لإتمام الطلب:</p>
+
+  <form action="https://formsubmit.co/housseinnoui@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+
+    <label>اختر المنتج:</label>
+    <select name="product" required>
+      <option value="spiderman">سبايدرمان</option>
+      <option value="hello-kitty">هيلو كيتي</option>
+      <option value="cars">كارس</option>
+      <option value="mickey">ميكي</option>
+      <option value="shaun">شون</option>
+    </select>
+
+    <label>الاسم واللقب:</label>
+    <input type="text" name="fullname" required>
+
+    <label>رقم الهاتف:</label>
+    <input type="text" name="phone" required>
+
+    <label>الولاية:</label>
+    <input type="text" name="wilaya" required>
+
+    <label>البلدية:</label>
+    <input type="text" name="baladiya" required>
+
+    <label>العنوان الكامل:</label>
+    <textarea name="address" rows="3" required></textarea>
+
+    <label>الكمية:</label>
+    <select name="quantity" required>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+
+    <button type="submit">إرسال الطلب</button>
+  </form>
+
+  <!-- صور المنتجات -->
+  <img src="spiderman.jpg" class="product-img" alt="سبايدرمان" />
+  <img src="hello-kitty.jpg" class="product-img" alt="هيلو كيتي" />
+  <img src="cars.jpg" class="product-img" alt="كارس" />
+  <img src="mickey.jpg" class="product-img" alt="ميكي" />
+  <img src="shaun.jpg" class="product-img" alt="شون" />
+
+  <!-- رقم الهاتف أسفل الصفحة -->
+  <div class="phone-number">للتواصل: 0796024565</div>
+</div>
+</body>
+</html>
